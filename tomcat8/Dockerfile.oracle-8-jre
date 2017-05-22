@@ -1,6 +1,6 @@
-FROM davidcaste/alpine-java-unlimited-jce:jre7
+FROM chenmins/java-centos:oracle-8-jre
 
-MAINTAINER David Castellanos <davidcaste@gmail.com>
+MAINTAINER Chenmin <cnlll@qq.com>
 
 ENV TOMCAT_MAJOR=8 \
     TOMCAT_VERSION=8.5.3 \

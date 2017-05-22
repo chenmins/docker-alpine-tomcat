@@ -1,6 +1,6 @@
-FROM davidcaste/alpine-java-unlimited-jce:%JVM_FLAVOUR%
+FROM chenmins/java-centos:%JVM_FLAVOUR%
 
-MAINTAINER David Castellanos <davidcaste@gmail.com>
+MAINTAINER Chenmin <cnlll@qq.com>
 
 ENV TOMCAT_MAJOR=%TOMCAT_MAJOR% \
     TOMCAT_VERSION=%TOMCAT_VERSION% \

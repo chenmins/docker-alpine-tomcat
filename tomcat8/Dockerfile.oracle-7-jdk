@@ -1,9 +1,9 @@
-FROM davidcaste/alpine-java-unlimited-jce:jdk8
+FROM chenmins/java-centos:oracle-7-jdk
 
-MAINTAINER David Castellanos <davidcaste@gmail.com>
+MAINTAINER Chenmin <cnlll@qq.com>
 
-ENV TOMCAT_MAJOR=7 \
-    TOMCAT_VERSION=7.0.69 \
+ENV TOMCAT_MAJOR=8 \
+    TOMCAT_VERSION=8.5.3 \
     TOMCAT_HOME=/opt/tomcat \
     CATALINA_HOME=/opt/tomcat \
     CATALINA_OUT=/dev/null
