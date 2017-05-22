@@ -1,14 +1,10 @@
-## Minified Docker image with Tomcat, Java with unlimited JCE patch applied
+## Centos Docker image with Tomcat, with different versions of java
 
-[![Build Status](https://travis-ci.org/davidcaste/docker-alpine-tomcat.svg?branch=master)](https://travis-ci.org/davidcaste/docker-alpine-tomcat)
+[![Docker Stars](https://img.shields.io/docker/stars/chenmins/tomcat-centos.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/chenmins/tomcat-centos.svg)]() [![Docker Automated buil](https://img.shields.io/docker/automated/chenmins/tomcat-centos.svg)]() [![Docker Build Statu](https://img.shields.io/docker/build/chenmins/tomcat-centos.svg)]()
 
-[![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:latest.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:latest)
+[![](https://images.microbadger.com/badges/image/chenmins/tomcat-centos.svg)](https://microbadger.com/images/chenmins/tomcat-centos "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/chenmins/tomcat-centos.svg)](https://microbadger.com/images/chenmins/tomcat-centos "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/license/chenmins/tomcat-centos.svg)](https://microbadger.com/images/chenmins/tomcat-centos "Get your own license badge on microbadger.com")
 
-Basic [Docker](https://www.docker.com/) image to run [Tomcat](https://tomcat.apache.org/) and [Java](https://www.java.com/) with unlimited JCE patch applied.
-
-This image is based on [AlpineLinux](http://alpinelinux.org/) to keep the size down, yet smaller images do exist. Includes BASH, since many Java applications like to have convoluted BASH start-up scripts.
-
-Extends [`davidcaste/alpine-java-unlimited-jce`](https://hub.docker.com/r/davidcaste/alpine-java-unlimited-jce/).
+[![GitHub forks](https://img.shields.io/github/forks/chenmins/tomcat-centos.svg?style=social&label=Fork)]() [![GitHub stars](https://img.shields.io/github/stars/chenmins/tomcat-centos.svg?style=social&label=Star)]() [![GitHub watchers](https://img.shields.io/github/watchers/chenmins/tomcat-centos.svg?style=social&label=Watch)]() [![GitHub followers](https://img.shields.io/github/followers/chenmins.svg?style=social&label=Follow)]()
 
 
 ### Versions
@@ -22,14 +18,7 @@ Extends [`davidcaste/alpine-java-unlimited-jce`](https://hub.docker.com/r/davidc
 
 | Tomcat version | Java version      | tags                                 | Size                                                                                                                                              |
 |:---------------|:------------------|:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tomcat 8       | Oracle Java 8 JRE | `latest` / `tomcat8` / `jre8tomcat8` | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jre8tomcat8.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jre8tomcat8) |
-| Tomcat 8       | Oracle Java 8 JDK | `jdk8tomcat8`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jdk8tomcat8.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jdk8tomcat8) |
-| Tomcat 8       | Oracle Java 7 JRE | `jre7tomcat8`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jre7tomcat8.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jre7tomcat8) |
-| Tomcat 8       | Oracle Java 7 JDK | `jdk7tomcat8`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jdk7tomcat8.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jdk7tomcat8) |
-| Tomcat 7       | Oracle Java 8 JRE | `tomcat7` / `jre8tomcat7`            | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jre8tomcat7.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jre8tomcat7) |
-| Tomcat 7       | Oracle Java 8 JDK | `jdk8tomcat7`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jdk8tomcat7.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jdk8tomcat7) |
-| Tomcat 7       | Oracle Java 7 JRE | `jre7tomcat7`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jre7tomcat7.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jre7tomcat7) |
-| Tomcat 7       | Oracle Java 7 JDK | `jdk7tomcat7`                        | [![](https://badge.imagelayers.io/davidcaste/alpine-tomcat:jdk7tomcat7.svg)](https://imagelayers.io/?images=davidcaste/alpine-tomcat:jdk7tomcat7) |
+| Tomcat 7       | Oracle Java 7 JRE | `latest` / `tomcat7` / `jre7tomcat7` | [![](https://images.microbadger.com/badges/image/chenmins/tomcat-centos.svg)](https://microbadger.com/images/chenmins/tomcat-centos "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/chenmins/tomcat-centos.svg)](https://microbadger.com/images/chenmins/tomcat-centos "Get your own version badge on microbadger.com") |
 
 
 ### Usage
@@ -45,7 +34,7 @@ There are two ways to use this image:
 1. Use it as base image for other images. For example:
 
   ```
-  FROM chenmins/tomcat-centos:tomcat8
+  FROM chenmins/tomcat-centos:tomcat7
   ```
 
 1. Use the image directly, and copy the `.war` files directly into the *appBase* directory. For example:
