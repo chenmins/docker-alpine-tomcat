@@ -49,7 +49,7 @@ There are two ways to use this image:
 1. Use the image directly, and copy the `.war` files directly into the *appBase* directory. For example:
 
   ```bash
-  docker run -d --name tomcat7 -p 8080:8080chenmins/tomcat-centos /opt/tomcat/bin/catalina.sh run
+  docker run -d --name tomcat7 -p 8080:8080 chenmins/tomcat-centos /opt/tomcat/bin/catalina.sh run
   docker cp ./ROOT.war tomcat7:/opt/tomcat/webapps/
   curl http://ip:8080/
   ```
