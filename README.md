@@ -14,7 +14,7 @@ Extends [`davidcaste/alpine-java-unlimited-jce`](https://hub.docker.com/r/davidc
 ### Versions
 
 **Tomcat 8 Version**: `8.5.3`  
-**Tomcat 7 Version**: `7.0.69`  
+**Tomcat 7 Version**: `7.0.72`  
 **JRE8/JDK8 Version**: `8u92-b14`  
 **JRE7/JDK7 Version**: `7u80-b15`
 
@@ -45,12 +45,12 @@ There are two ways to use this image:
 1. Use it as base image for other images. For example:
 
   ```
-  FROM davidcaste/alpine-tomcat:tomcat8
+  FROM chenmins/tomcat-centos:tomcat8
   ```
 
 1. Use the image directly, and copy the `.war` files directly into the *appBase* directory. For example:
 
   ```
-  docker run -it --rm davidcaste/alpine-tomcat /opt/tomcat/bin/catalina.sh run
+  docker run -it --rm chenmins/tomcat-centos /opt/tomcat/bin/catalina.sh run
   docker cp ./sample.war tomcat-ci:/opt/tomcat/webapps/sample.war
   ```
